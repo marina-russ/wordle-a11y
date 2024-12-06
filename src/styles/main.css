@@ -108,8 +108,7 @@ h1 {
 }
 
 /*
-  Round the corners for the 4 cells at the very corners of
-  the game board
+  Round the corners for the 4 cells at the very corners of the game board
 */
 .guess:first-of-type .cell:first-of-type {
   --radius: 4px 0px 0px 0px;
@@ -199,7 +198,7 @@ h1 {
 /*
   Modal styles
 
-  HACK: I'm doing this in a quick and dirty way.
+  HACK: I'm doing this in a quick and dirty way. 
   Later in the course, we'll see my preferred way of building
   modals in React.
 */
