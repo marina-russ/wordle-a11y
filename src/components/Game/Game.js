@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 import GuessInput from "../GuessInput";
 import GuessResults from "../GuessResults";
 
-import { sample } from '../../utils';
-import { WORDS } from '../../data';
+import { sample } from "../../utils";
+import { WORDS } from "../../data";
 
 // Pick a random word on every page load.
 const answer = sample(WORDS);
@@ -12,19 +12,18 @@ const answer = sample(WORDS);
 console.info({ answer });
 
 function Game() {
-
   const [guessHistory, setGuessHistory] = React.useState([]);
 
   return (
     <>
       <GuessResults
         guessHistory={guessHistory}
+        answer={answer}
       />
       <GuessInput
         guessHistory={guessHistory}
         setGuessHistory={setGuessHistory}
       />
-
     </>
   );
 }
